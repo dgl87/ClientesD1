@@ -22,10 +22,14 @@ Ferramentas: Framework ASP.NET Core MVC para criação de aplicação WEB. Templ
 
 ### Tanto para /Customers quanto para /Departments temos:	
 `/Create` - Cadastrar cliente com todos os atributos (Name, CPF, RG, BirthDate, Contacts, Adress, RedesSociais, DepartmentId)
+
 `/Delete` - Deleta o cadastro do cliente
+
 `/Details` - Informa detalhes do Cliente
 
 ### Buscas
 `/CustomersRecords` - Busca clientes por data
+
 `/CustomersRecords/SimpleSearch` - Busca Simples
+
 `/CustomersRecords/GroupingSearch` - Busca Agrupada por Department
