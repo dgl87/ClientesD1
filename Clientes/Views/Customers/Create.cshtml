@@ -1,0 +1,63 @@
+﻿
+@model Clientes.Models.ViewModels.CustomerFormViewModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h4>Customer</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Customers.Name" class="control-label"></label>
+                <input asp-for="Customers.Name" class="form-control" />
+                <span asp-validation-for="Customers.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customers.CPF" class="control-label"></label>
+                <input asp-for="Customers.CPF" class="form-control" />
+                <span asp-validation-for="Customers.CPF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customers.RG" class="control-label"></label>
+                <input asp-for="Customers.RG" class="form-control" />
+                <span asp-validation-for="Customers.RG" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customers.BirthDate" class="control-label"></label>
+                <input asp-for="Customers.BirthDate" class="form-control" />
+                <span asp-validation-for="Customers.BirthDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customers.Contacts" class="control-label"></label>
+                <input asp-for="Customers.Contacts" class="form-control" />
+                <span asp-validation-for="Customers.Contacts" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customers.Adress" class="control-label"></label>
+                <input asp-for="Customers.Adress" class="form-control" />
+                <span asp-validation-for="Customers.Adress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customers.RedesSociais" class="control-label"></label>
+                <input asp-for="Customers.RedesSociais" class="form-control" />
+                <span asp-validation-for="Customers.RedesSociais" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customers.DepartmentId" class="control-label"></label>
+                <select asp-for="Customers.DepartmentId" asp-items="@(new SelectList(Model.Departments,"Id", "Name"))" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
