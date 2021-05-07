@@ -3,8 +3,8 @@ Ferramentas: Framework ASP.NET Core MVC para criação de aplicação WEB. Templ
 
 ## Antes de Começar
 ### Certifique-se que você:
-Tenha o Visual Studio 2019 instalado | `https://visualstudio.microsoft.com/pt-br/`
-Xampp Control Panel v3.3.0 instalado | `https://www.apachefriends.org/pt_br/index.html`
+ - Tenha o Visual Studio 2019 instalado | `https://visualstudio.microsoft.com/pt-br/`
+ - Xampp Control Panel v3.3.0 instalado | `https://www.apachefriends.org/pt_br/index.html`
 
 ## Começando
 1. Clone a aplicação no seu workspace local
