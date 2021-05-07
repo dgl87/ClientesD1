@@ -17,6 +17,7 @@ Ferramentas: Framework ASP.NET Core MVC para criação de aplicação WEB. Templ
 
 ## Recursos da API 
 `/Customers` - Listar clientes
+
 `/Departments` - Lista departamento dos clientes
 
 ### Tanto para /Customers quanto para /Departments temos:	
