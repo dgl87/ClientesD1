@@ -19,7 +19,7 @@ Xampp Control Panel v3.3.0 instalado | `https://www.apachefriends.org/pt_br/inde
 `/Customers` - Listar clientes
 `/Departments` - Lista departamento dos clientes
 
-### Tanto para /customers quanto para /Departments temos:	
+### Tanto para /Customers quanto para /Departments temos:	
 `/Create` - Cadastrar cliente com todos os atributos (Name, CPF, RG, BirthDate, Contacts, Adress, RedesSociais, DepartmentId)
 `/Delete` - Deleta o cadastro do cliente
 `/Details` - Informa detalhes do Cliente
